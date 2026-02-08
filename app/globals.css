@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -47,18 +46,15 @@
   }
 }
 
-/* Custom scroll behavior */
 html {
   scroll-behavior: smooth;
 }
 
-/* Selection */
 ::selection {
   background-color: #06b6d4;
   color: #ffffff;
 }
 
-/* Custom animations */
 @keyframes fade-in-up {
   from {
     opacity: 0;
@@ -87,15 +83,6 @@ html {
   to {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-
-@keyframes pulse-dot {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
   }
 }
 
